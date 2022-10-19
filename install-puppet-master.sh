@@ -29,7 +29,7 @@ echo "Install Vim and Git..."
 yum install -y vim git
 
 echo "Setting up GEM and install r10k..."
-echo "export PATH=$PATH:/opt/puppetlabs/puppet/bin/" > /etc/profile.d/puppet.sh
+echo "export PATH=$PATH:/opt/puppetlabs/puppet/bin/:/opt/puppetlabs/server/bin/" > /etc/profile.d/puppet.sh
 /opt/puppetlabs/puppet/bin/gem install r10k
 
 control_repo="$1"
